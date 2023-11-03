@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+	margin	: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rebeccapurple;
+}
+
+header {
+  width: 100%;
+  padding: 20px 150px;
+  position: fixed;
+  z-index: 1;
+  background: black;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  display: none;
+}
+
+.menu .logo {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.menu .logo:hover {
+  color: rebeccapurple;
+}
+
+.desktop ul {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.desktop ul li {
+  position: relative;
+  margin-left: 25px;
+}
+
+.desktop ul li a {
+  color: white;
+  text-transform: capitalize;
+}
+
+.desktop ul li a:hover {
+  color: rebeccapurple;
+}
+
+.sidebar {
+  display: none;
+}
+
+/* HEADER */
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 150px;
+}
+
+.banner {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-banner {
+  text-align: center;
+}
+
+.text-banner h1 {
+  font-size: 2.5rem;
+  color: #111;
+  text-shadow: 1px 1px #111;
+}
+
+.text-banner h3 {
+  color: #111;
+  font-size: 1.7rem;
+  text-shadow: 1px 1px #111;
+}
+
+.text-banner p {
+  font-size: 1.2rem;
+  color: #333;
+  text-shadow: 1px 1px #333;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.buttons a {
+  padding: 10px 20px;
+  border-radius: 3px;
+  background: black;
+  color: white;
+  font-size: .9rem;
+  margin-right: 10px;
+  transition: .3s;
+}
+
+.buttons a:hover {
+  background: rebeccapurple;
+}
+
+.icons-social {
+  position: relative;
+  bottom: -100px;
+}
+
+.icons-social i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+  margin: 0 5px;
+}
+
+.icons-social i:hover {
+  background: rebeccapurple;
+}
+
+/* SECTION HOME */
+
+.title {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.title h3 {
+  color: #111;
+  text-shadow: 1px 1px #111;
+  font-size: 2rem;
+}
+
+.title span {
+  color: rebeccapurple;
+  text-shadow: 1px 1px rebeccapurple;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 3px;
+  background: #ddd;
+  margin: 5px auto;
+  border: 1px solid #ddd;
+  position: relative;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+}
+
+.span {
+  position: absolute;
+  width: 100%;
+  line-height: 280px;
+  height: 100%;
+  text-align: center;
+  background: #333;
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 3px;
+  bottom: 0;
+  display: none;
+}
+
+.card:hover .span {
+  display: block;
+}
+
+
+@media(max-width: 900px) {
+  /* SECTION HOME */
+
+  section {
+    padding: 0 10px;
+  }
+
+  .text-banner h1 {
+    font-size: 2.2rem;
+    color: #111;
+    text-shadow: 1px 1px #111;
+  }
+  
+  .text-banner h3 {
+    color: #111;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px #111;
+  }
+  
+  .text-banner p {
+    font-size: 1.1rem;
+    color: #333;
+    text-shadow: 1px 1px #333;
+  }
+
+  /* HEADER */
+
+  .desktop {
+    display: none;
+  }
+
+  header {
+    padding: 15px 10px;
+  }
+
+  .sidebar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    background: black;
+    transition: .5s;
+    overflow: hidden;
+    display: block;
+  }
+  
+  .sidebar ul {
+    position: relative;
+    padding: 0 20px;
+  }
+  
+  .sidebar ul li {
+    padding: 20px 0;
+  }
+  
+  .sidebar ul li a {
+    text-transform: capitalize;
+    color: white;
+  }
+
+  .sidebar ul li a:hover {
+    color: rebeccapurple;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .logo:hover {
+    color: rebeccapurple;
+  }
+  
+  .btn {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .btn::before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: white;
+    transform: translateY(-6px);
+    box-shadow: 0 6px 0 white;
+    transition: .6s;
+  }
+  
+  .btn::after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: white;
+    transform: translateY(6px);
+    transition: .6s;
+  }
+  
+  .btn.active::before {
+    transform: translateY(0px) rotate(-45deg);
+    box-shadow: 0 0px 0 white;
+  }
+  
+  .btn.active::after {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0px 0 white;
+  }
+  
+  .show {
+    max-width: 300px;
+  }
+  
+  .hide {
+    max-width: 0px;
+  }
+}
